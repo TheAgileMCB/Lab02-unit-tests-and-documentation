@@ -1,0 +1,13 @@
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\bin\Debug\netcoreapp3.1\Lab02UnitTests.exe
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\bin\Debug\netcoreapp3.1\Lab02UnitTests.deps.json
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\bin\Debug\netcoreapp3.1\Lab02UnitTests.runtimeconfig.json
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\bin\Debug\netcoreapp3.1\Lab02UnitTests.runtimeconfig.dev.json
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\bin\Debug\netcoreapp3.1\Lab02UnitTests.dll
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\bin\Debug\netcoreapp3.1\Lab02UnitTests.pdb
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\obj\Debug\netcoreapp3.1\Lab02UnitTests.csprojAssemblyReference.cache
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\obj\Debug\netcoreapp3.1\Lab02UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\obj\Debug\netcoreapp3.1\Lab02UnitTests.AssemblyInfoInputs.cache
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\obj\Debug\netcoreapp3.1\Lab02UnitTests.AssemblyInfo.cs
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\obj\Debug\netcoreapp3.1\Lab02UnitTests.dll
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\obj\Debug\netcoreapp3.1\Lab02UnitTests.pdb
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\Lab02UnitTests\obj\Debug\netcoreapp3.1\Lab02UnitTests.genruntimeconfig.cache
