@@ -8,12 +8,30 @@ namespace Lab02UnitTests
 		{
 			double balance = 20000.00;
 			Console.WriteLine("Hello!");
-			Console.Write(" Welcome, User! \n What would you like to do? \n Please type it now, \n\n Check Balance \n Withdraw \n Deposit \n Exit");
-			if (Console.ReadLine().ToLower() == "check balance")
-			{
-				viewBalance(balance);
-			}
+			Console.Write(" Welcome, User! \n What would you like to do? \n Please type it now, \n\n Check Balance \n Withdraw \n Deposit \n Exit \n\n");
 
+			string userResponse = Console.ReadLine();
+			switch (userResponse.ToLower())
+			{
+				case "check balance":
+	
+				viewBalance(balance);
+					break;
+
+				case "withdraw":
+			
+				withdrawFunds(balance);
+					break;
+
+				case "deposit":
+
+				depositFunds(balance);
+					break;
+
+				default:
+				Console.WriteLine("Thank you and goodbye!");
+					break;
+			}
 
 		}
 
@@ -23,12 +41,16 @@ namespace Lab02UnitTests
 
 		}
 
-		public static double withdrawFunds()
+		public static double withdrawFunds(double balance)
 		{
-			return ;
+			Console.WriteLine("How much would you like to withdraw?");
+			double withdrawl = double.Parse(Console.ReadLine());
+			double newBalance = balance - withdrawl;
+			Console.WriteLine($"You are withdrawing {withdrawl:C}");
+			return newBalance;
 		}
 
-		public static double depositFunds()
+		public static double depositFunds(double balance)
 		{
 			return 00.00;
 		}
