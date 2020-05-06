@@ -94,3 +94,6 @@ C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentati
 C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\ATM.Tests\obj\Debug\netcoreapp3.1\ATM.Tests.dll
 C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\ATM.Tests\obj\Debug\netcoreapp3.1\ATM.Tests.pdb
 C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\ATM.Tests\obj\Debug\netcoreapp3.1\ATM.Tests.genruntimeconfig.cache
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\ATM.Tests\bin\Debug\netcoreapp3.1\Lab02UnitTests.exe
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\ATM.Tests\bin\Debug\netcoreapp3.1\Lab02UnitTests.dll
+C:\Users\mcb4r\OneDrive\Desktop\github\code-401\Lab02-unit-tests-and-documentation\ATM.Tests\bin\Debug\netcoreapp3.1\Lab02UnitTests.pdb
