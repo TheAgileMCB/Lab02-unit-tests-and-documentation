@@ -9,28 +9,28 @@ namespace Lab02UnitTests
 			try
 			{
 				Console.WriteLine("Hello!");
-				Console.Write(" Welcome, User! \n What would you like to do? \n Please type it now, \n\n Check Balance \n Withdraw \n Deposit \n Exit \n\n");
+				Console.Write(" Welcome, User! \n What would you like to do? \n Please type the corresponding number now. \n\n 1. Check Balance \n 2. Withdraw \n 3. Deposit \n 4. Exit \n\n");
 
 				string userResponse = Console.ReadLine();
-				switch (userResponse.ToLower())
+				switch (userResponse)
 				{
-					case "check balance":
+					case "1":
 
 						ViewBalance();
 						break;
 
-					case "withdraw":
+					case "2":
 
 						Console.WriteLine("How much would you like to withdraw?");
-						double withdrawal = Math.Abs(double.Parse(Console.ReadLine()));
+						decimal withdrawal = Math.Abs(decimal.Parse(Console.ReadLine()));
 
 						WithdrawFunds(withdrawal);
 						break;
 
-					case "deposit":
+					case "3":
 
 						Console.WriteLine("How much would you like to deposit?");
-						double deposit = Math.Abs(double.Parse(Console.ReadLine()));
+						decimal deposit = Math.Abs(decimal.Parse(Console.ReadLine()));
 
 						DepositFunds(deposit);
 						break;
@@ -52,14 +52,14 @@ namespace Lab02UnitTests
 			Console.WriteLine($"Your balance is {balance:C}");
 
 		}
-		private static double balance = 0;
+		private static decimal balance = 0;
 
-		public static double GetBalance()
+		public static decimal GetBalance()
 		{
 			return balance;
 		}
 
-		public static double WithdrawFunds(double withdrawal)
+		public static decimal WithdrawFunds(decimal withdrawal)
 		{
 			try
 			{
@@ -84,7 +84,7 @@ namespace Lab02UnitTests
 			}
 		}
 
-		public static double DepositFunds(double deposit)
+		public static decimal DepositFunds(decimal deposit)
 		{
 			try
 			{
