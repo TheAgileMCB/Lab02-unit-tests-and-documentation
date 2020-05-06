@@ -1,4 +1,4 @@
-# Lab02-unit-tests-and-documentation
+# The Dream ATM
 Lab02 of DeltaV 401 on test-driven programming
 
 #
