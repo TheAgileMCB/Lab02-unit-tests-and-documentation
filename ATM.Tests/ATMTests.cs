@@ -54,16 +54,16 @@ namespace ATM.Tests
         [Fact]
         public void Does_money_go_in()
         {
-            //Arrange
+            //Arrange | Given
             double balance = Lab02UnitTests.ATM.GetBalance();
             double deposit = 10;
-            double testBalance = balance + deposit;
 
-            // Act
+            // Act | When
             double result = Lab02UnitTests.ATM.DepositFunds(deposit);
 
-            // Assert
-            Assert.Equal(testBalance, result);
+            // Assert | Then
+            double expectedBalance = balance + deposit;
+            Assert.Equal(expectedBalance, result);
         }
 
         [Fact]
@@ -72,13 +72,13 @@ namespace ATM.Tests
             //Arrange
             double balance = Lab02UnitTests.ATM.GetBalance();
             double deposit = -10;
-            double testBalance = balance + deposit;
 
             // Act
             double result = Lab02UnitTests.ATM.DepositFunds(deposit);
 
             // Assert
-            Assert.Equal(testBalance, result);
+            double expectedBalance = balance + deposit;
+            Assert.Equal(expectedBalance, result);
         }
 
         [Fact]

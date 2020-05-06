@@ -52,7 +52,7 @@ namespace Lab02UnitTests
 			Console.WriteLine($"Your balance is {balance:C}");
 
 		}
-		private static double balance = 20000;
+		private static double balance = 0;
 
 		public static double GetBalance()
 		{
@@ -63,14 +63,19 @@ namespace Lab02UnitTests
 		{
 			try
 			{
-				double newBalance = balance - withdrawal;
-				if(newBalance < 0)
+				//if (withdrawal < 0)
+				//{
+				//	Console.WriteLine("Cannot withdraw negative amount");
+				//	return balance;
+				//}
+				balance = balance - withdrawal;
+				if(balance < 0)
 				{
 					Console.WriteLine("Your account must remain positive");
 					return balance;
 				}
 				Console.WriteLine($"You are withdrawing {withdrawal:C}");
-				return newBalance;
+				return balance;
 			}
 			catch (ArgumentOutOfRangeException)
 			{
@@ -83,9 +88,9 @@ namespace Lab02UnitTests
 		{
 			try
 			{
-				double newBalance = balance + deposit;
+				balance = balance + deposit;
 				Console.WriteLine($"You are depositing {deposit:C}");
-				return newBalance;
+				return balance;
 			}
 			catch (ArgumentOutOfRangeException)
 			{
