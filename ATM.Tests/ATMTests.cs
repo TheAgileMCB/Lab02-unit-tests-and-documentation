@@ -37,6 +37,21 @@ namespace ATM.Tests
         }
 
         [Fact]
+        public void Does_negative_money_come_out()
+        {
+            //Arrange
+            double balance = Lab02UnitTests.ATM.GetBalance();
+            double withdrawal = -10;
+            double testBalance = balance - withdrawal;
+
+            // Act
+            double result = Lab02UnitTests.ATM.WithdrawFunds(withdrawal);
+
+            // Assert
+            Assert.Equal(testBalance, result);
+        }
+
+        [Fact]
         public void Does_money_go_in()
         {
             //Arrange
@@ -51,6 +66,20 @@ namespace ATM.Tests
             Assert.Equal(testBalance, result);
         }
 
+        [Fact]
+        public void Does_negative_money_go_in()
+        {
+            //Arrange
+            double balance = Lab02UnitTests.ATM.GetBalance();
+            double deposit = -10;
+            double testBalance = balance + deposit;
+
+            // Act
+            double result = Lab02UnitTests.ATM.DepositFunds(deposit);
+
+            // Assert
+            Assert.Equal(testBalance, result);
+        }
 
 
 

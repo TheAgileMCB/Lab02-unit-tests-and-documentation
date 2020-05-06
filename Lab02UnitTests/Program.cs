@@ -20,7 +20,7 @@ namespace Lab02UnitTests
 				case "withdraw":
 
 					Console.WriteLine("How much would you like to withdraw?");
-					double withdrawal = double.Parse(Console.ReadLine());
+					double withdrawal = Math.Abs(double.Parse(Console.ReadLine()));
 
 					WithdrawFunds(withdrawal);
 					break;
@@ -28,7 +28,7 @@ namespace Lab02UnitTests
 				case "deposit":
 
 					Console.WriteLine("How much would you like to deposit?");
-					double deposit = double.Parse(Console.ReadLine());
+					double deposit = Math.Abs(double.Parse(Console.ReadLine()));
 
 					DepositFunds(deposit);
 					break;
