@@ -81,24 +81,19 @@ namespace ATM.Tests
             Assert.Equal(testBalance, result);
         }
 
+        [Fact]
+        public void Overdraft_protection()
+        {
+            //Arrange
+            double balance = Lab02UnitTests.ATM.GetBalance();
+            double withdrawal = balance + 500;
+
+            // Act
+            double balanceAfterWithdraw = Lab02UnitTests.ATM.WithdrawFunds(withdrawal);
 
 
-
-
-
-
-        //[Fact]
-        //public void overdraftProtection()
-
-        //    //Arrange
-        //decimal originalBalance = Lab02UnitTests.ATM.GetBalance();
-        //decimal amountToWithdraw = originalBalance + 500;
-
-        //// Act
-        //decimal balanceAfterWithdraw = Program.withdrawFunds(amountToWithdraw);
-
-
-        //// Assert
-        //Assert.Equal(orignalBalance, balanceToWithdraw)
+            // Assert
+            Assert.Equal(balance, withdrawal - 500);
+                }
     }
 }

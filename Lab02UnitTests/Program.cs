@@ -6,36 +6,44 @@ namespace Lab02UnitTests
 	{
 		public static void Main()
 		{
-			Console.WriteLine("Hello!");
-			Console.Write(" Welcome, User! \n What would you like to do? \n Please type it now, \n\n Check Balance \n Withdraw \n Deposit \n Exit \n\n");
-
-			string userResponse = Console.ReadLine();
-			switch (userResponse.ToLower())
+			try
 			{
-				case "check balance":
-	
-				ViewBalance();
-					break;
+				Console.WriteLine("Hello!");
+				Console.Write(" Welcome, User! \n What would you like to do? \n Please type it now, \n\n Check Balance \n Withdraw \n Deposit \n Exit \n\n");
 
-				case "withdraw":
+				string userResponse = Console.ReadLine();
+				switch (userResponse.ToLower())
+				{
+					case "check balance":
 
-					Console.WriteLine("How much would you like to withdraw?");
-					double withdrawal = Math.Abs(double.Parse(Console.ReadLine()));
+						ViewBalance();
+						break;
 
-					WithdrawFunds(withdrawal);
-					break;
+					case "withdraw":
 
-				case "deposit":
+						Console.WriteLine("How much would you like to withdraw?");
+						double withdrawal = Math.Abs(double.Parse(Console.ReadLine()));
 
-					Console.WriteLine("How much would you like to deposit?");
-					double deposit = Math.Abs(double.Parse(Console.ReadLine()));
+						WithdrawFunds(withdrawal);
+						break;
 
-					DepositFunds(deposit);
-					break;
+					case "deposit":
 
-				default:
-				Console.WriteLine("Thank you and goodbye!");
-					break;
+						Console.WriteLine("How much would you like to deposit?");
+						double deposit = Math.Abs(double.Parse(Console.ReadLine()));
+
+						DepositFunds(deposit);
+						break;
+
+					default:
+						Console.WriteLine("Thank you and goodbye!");
+						break;
+				}
+			}
+			catch (Exception)
+			{
+
+				throw;
 			}
 		}
 
@@ -59,7 +67,7 @@ namespace Lab02UnitTests
 				if(newBalance < 0)
 				{
 					Console.WriteLine("Your account must remain positive");
-					throw new Exception("Your account must remain positive.");
+					return balance;
 				}
 				Console.WriteLine($"You are withdrawing {withdrawal:C}");
 				return newBalance;
